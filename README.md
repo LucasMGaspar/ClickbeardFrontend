@@ -25,12 +25,14 @@ Sistema  para gerenciamento de agendamentos de barbearia, desenvolvido com Node.
 
 ### . Configure o Frontend
 
-#### 3.1. Em outro terminal, entre na pasta do frontend
+```bash
+git clone https://github.com/LucasMGaspar/ClickbeardFrontend.git
 
 ```bash
 cd clickbeard-frontend
 ```
-
+```bash
+git clone https://github.com/LucasMGaspar/ClickbeardFrontend.git
 #### 3.2. Instale as dependências
 
 ```bash
