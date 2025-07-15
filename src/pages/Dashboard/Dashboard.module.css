@@ -1,0 +1,101 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, var(--primary-color) 0%,var(--primary-hover)100%);
+  padding: 20px 24px;
+  box-shadow: var(--shadow-md);
+  z-index: 100;
+}
+.userName {
+  color: rgba(255,255,255,0.9);
+  margin-right: 20px;
+}
+.logoutBtn, .adminBtn {
+  margin-left: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid rgba(255,255,255,0.3);
+  background: transparent;
+  color: #fff;
+  transition: background .3s, transform .3s;
+}
+.logoutBtn:hover, .adminBtn:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: #fff;
+  transform: translateY(-1px);
+}
+.main {
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 20px;
+}
+.newBtn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, var(--success-color)0%,var(--success-hover)100%);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform .3s, box-shadow .3s;
+}
+.newBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(39,174,96,0.3);
+}
+.empty {
+  text-align: center;
+  padding: 80px 20px;
+}
+.empty p {
+  margin-bottom: 24px;
+}
+.ctaBtn {
+  padding: 16px 32px;
+  background: linear-gradient(135deg,var(--primary-color)0%,var(--primary-hover)100%);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform .3s, box-shadow .3s;
+}
+.ctaBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(44,62,80,0.4);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(340px,1fr));
+  gap: 24px;
+}
+.loading, .error {
+  text-align: center;
+  font-size: 16px;
+  padding: 60px;
+}
+.error {
+  color: var(--danger-color);
+}
+@media(max-width:768px) {
+  .grid { grid-template-columns: 1fr }
+  .sectionHeader { flex-direction: column; gap:16px }
+  .newBtn { width:100% }
+}

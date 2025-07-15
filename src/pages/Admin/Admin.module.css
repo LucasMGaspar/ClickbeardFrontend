@@ -1,0 +1,103 @@
+/* ---------- VARIÁVEIS GLOBAIS (ou use :root do seu projeto) --------- */
+:root {
+  --primary-color:  #24384d;
+  --primary-hover:  #24384d;
+  --bg-color:       #f8f9fb;
+  --shadow-md:      0 2px 8px rgba(0,0,0,.15);
+}
+
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;                    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-hover) 100%
+  );
+  box-shadow: var(--shadow-md);
+  z-index: 100;
+}
+
+.adminBtn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* ---------- WRAPPER CENTRAL (conteúdo) ------------------------------ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: calc(100vh - 84px); /* 84 px ≈ altura do header           */
+  background: var(--bg-color);
+}
+
+/* ---------- RESTANTE DO SEU CSS ORIGINAL --------------------------- */
+.loading {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 2rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tabContent { margin-top: 1.5rem; }
+
+.sectionTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.appointmentsWrapper { display: flex; justify-content: center; }
+
+.appointmentsCard {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 900px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.add {
+  background: #1e7cd5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.empty {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+}

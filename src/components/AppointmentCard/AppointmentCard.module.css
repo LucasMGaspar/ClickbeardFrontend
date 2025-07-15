@@ -1,0 +1,46 @@
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: transform .3s, box-shadow .3s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.details p {
+  margin: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.badge {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.statusScheduled { background: linear-gradient(135deg,#569ec5 0%,#2980B9 100%); color:#fff }
+.statusCompleted { background: linear-gradient(135deg,#27AE60 0%,#229954 100%); color:#fff }
+.statusCancelled { background: linear-gradient(135deg,#E74C3C 0%,#C0392B 100%); color:#fff }
+.cancelBtn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  border: 2px solid var(--danger-color);
+  background: var(--danger-color);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: transform .3s, background .3s;
+}
+.cancelBtn:hover {
+  background: var(--danger-hover);
+  transform: translateY(-1px);
+}
