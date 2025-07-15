@@ -29,7 +29,7 @@ Sistema  para gerenciamento de agendamentos de barbearia, desenvolvido com Node.
 git clone https://github.com/LucasMGaspar/ClickbeardFrontend.git
 
 ```bash
-cd clickbeard-frontend
+cd ClickbeardFrontend
 ```
 ```bash
 npm install
