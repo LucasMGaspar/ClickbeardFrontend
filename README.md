@@ -32,10 +32,6 @@ git clone https://github.com/LucasMGaspar/ClickbeardFrontend.git
 cd clickbeard-frontend
 ```
 ```bash
-git clone https://github.com/LucasMGaspar/ClickbeardFrontend.git
-#### 3.2. Instale as dependências
-
-```bash
 npm install
 ```
 
